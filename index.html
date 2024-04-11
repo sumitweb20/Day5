@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        width: 500px;
+        border: 2px solid red;
+        margin: auto;
+    }
+    .box{
+        width: 460px;
+        height: 35px;
+        background-color: cyan;
+        padding: 15px 10px;
+        margin: 10px;
+    }
+    .left{
+        width: 150px;
+        float: left;
+    }
+    .right{
+        width: 310px;
+        float: left;
+    }
+    label{
+        font-size: 18px;
+    }
+
+</style>
+<body>
+    <div class="main">
+      <form autocomplete="off">
+        <div class="box">
+            <div class="left">
+                <label for="name">User Name</label>
+            </div>
+            <div class="right">
+                <input type="text" id="name" name="user_name" readonly placeholder="sumit" minlength="8" maxlength="15"> 
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="email">User Email</label>
+            </div>
+            <div class="right">
+                <input type="email" id="email" name="user_email" required placeholder="enter your email">
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="password">User Password</label>
+            </div>
+            <div class="right">
+                <input type="password" id="password" name="user_password">
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="number">Phone number</label>
+            </div>
+            <div class="right">
+                <input type="tel" id="number" name="phone_number">
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="address">User Address</label>
+            </div>
+            <div class="right">
+                <textarea id="address" name="user_Address"></textarea>
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="country">User country</label>
+            </div>
+            <div class="right">
+                <select name="country" id="country" disabled>
+                    <option value="">Select your country</option>
+                    <optgroup label="Asia">
+                        <option value="" selected >India</option>
+                        <option value="">Bhutan</option>
+                    </optgroup>
+                    <option value="">Russia</option>
+                </select>
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label>Gender</label>
+            </div>
+            <div class="right">
+
+                <input type="radio" id="male" value="male" name="gender">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" value="female" name="gender">
+                <label for="female">Female</label>
+
+                <input type="radio" id="others" value="others" name="gender">
+                <label for="others">Others</label>
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label>User Hobbies</label>
+            </div>
+            <div class="right">
+                
+                <input type="checkbox" id="cricket" value="cricket" name="hobbies">
+                <label for="cricket">cricket</label>
+
+                <input type="checkbox" id="football" value="football" name="hobbies">
+                <label for="football">football</label>
+
+                <input type="checkbox" id="badminton" value="badminton" name="hobbies" checked>
+                <label for="badminton">badminton</label>
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="date">UserDOB</label>
+            </div>
+            <div class="right">
+                <input type="date" id="date" name="date" min="2000-04-09">
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="time">Time</label>
+            </div>
+            <div class="right">
+                <input type="time" id="time" name="time" >
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="week">Week</label>
+            </div>
+            <div class="right">
+                <input type="week" id="week" name="week" >
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="month">Month</label>
+            </div>
+            <div class="right">
+                <input type="month" id="month" name="month" >
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="age">User age</label>
+            </div>
+            <div class="right">
+                <input type="number" id="age" name="age" min="10" max="60">
+            </div>
+        </div> 
+        <div class="box">
+            <div class="left">
+                <label for="color">User Colour</label>
+            </div>
+            <div class="right">
+                <input type="color" id="color" name="color">
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="file">User File</label>
+            </div>
+            <div class="right">
+                <input type="file" id="file" name="file">
+            </div>
+        </div>
+        <div class="box">
+            <div class="left">
+                <label for="range">Range</label>
+            </div>
+            <div class="right">
+                <input type="range" id="range" name="range">
+            </div>
+        </div>
+        <div class="box">
+            <div class="right">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
